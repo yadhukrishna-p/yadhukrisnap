@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yadhukrishna Palliyath - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* A dark blue-gray */
+        }
+        .text-gold {
+            color: #FBBF24; /* Amber-400 */
+        }
+        .bg-gold {
+            background-color: #FBBF24;
+        }
+        .border-gold {
+            border-color: #FBBF24;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-white text-center mb-12;
+        }
+        .nav-link {
+            @apply px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition-colors;
+        }
+        .card {
+            @apply bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700;
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-gray-900 sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-white">
+                <span class="text-gold">YP</span> Portfolio
+            </a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900">
+            <a href="#home" class="block py-2 px-4 text-sm nav-link">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm nav-link">About</a>
+            <a href="#education" class="block py-2 px-4 text-sm nav-link">Education</a>
+            <a href="#experience" class="block py-2 px-4 text-sm nav-link">Experience</a>
+            <a href="#certifications" class="block py-2 px-4 text-sm nav-link">Certifications</a>
+            <a href="#skills" class="block py-2 px-4 text-sm nav-link">Skills</a>
+            <a href="#contact" class="block py-2 px-4 text-sm nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex items-center bg-gray-900">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">Yadhukrishna Palliyath</h1>
+                <p class="mt-4 text-xl md:text-2xl font-semibold text-gold">Finance & Consulting Professional</p>
+                <p class="mt-2 text-lg text-gray-400">CA Inter Candidate | B.Com Student | Financial Consultant</p>
+                <p class="mt-8 max-w-3xl mx-auto text-gray-300">
+                    An objective-driven and detail-oriented candidate, seeking to enhance and build strong practical knowledge and skills in the finance and consulting field to drive strategic solutions and impactful value.
+                </p>
+                <div class="mt-10 flex justify-center gap-4">
+                    <a href="#contact" class="bg-gold text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-300 transition-transform transform hover:scale-105">Let's Connect</a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="border-2 border-gold text-gold font-bold py-3 px-8 rounded-full hover:bg-gold hover:text-gray-900 transition-colors">View LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Me</h2>
+                <p class="mt-12 text-center max-w-3xl mx-auto text-lg mb-12">
+                    My academic and professional journey reflects a commitment to excellence in finance and business studies, with consistent high performance and recognition across multiple levels.
+                </p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="card">
+                        <p class="text-4xl font-bold text-gold">5+</p>
+                        <p class="mt-2 text-gray-400">Years of Academic Excellence</p>
+                    </div>
+                    <div class="card">
+                        <p class="text-4xl font-bold text-gold">14+</p>
+                        <p class="mt-2 text-gray-400">Technical Skills Mastered</p>
+                    </div>
+                    <div class="card">
+                        <p class="text-4xl font-bold text-gold">15+</p>
+                        <p class="mt-2 text-gray-400">Leadership Competencies</p>
+                    </div>
+                    <div class="card">
+                        <p class="text-4xl font-bold text-gold">10+</p>
+                        <p class="mt-2 text-gray-400">Leadership Roles Held</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Education & Achievements</h2>
+                <div class="space-y-12">
+                    <!-- Educational Qualifications -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-6 text-center">Educational Qualifications</h3>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">CA Inter (Both Groups)</h4>
+                                <p class="text-sm text-gray-400">Institute of Chartered Accountants of India (ICAI)</p>
+                                <p class="mt-2">Result Awaiting</p>
+                            </div>
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">B.Com (4th Semester)</h4>
+                                <p class="text-sm text-gray-400">H.R. College of Commerce and Economics, HSNCU</p>
+                                <p class="mt-2">2023-Present | 8.75 CGPA</p>
+                            </div>
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">CA Foundation</h4>
+                                <p class="text-sm text-gray-400">Institute of Chartered Accountants of India (ICAI)</p>
+                                <p class="mt-2">Dec 2023 | 57.75% Score</p>
+                            </div>
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">AISSCE (Class XII)</h4>
+                                <p class="text-sm text-gray-400">CBSE</p>
+                                <p class="mt-2">2023 | 95% Score</p>
+                            </div>
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">AISSE (Class X)</h4>
+                                <p class="text-sm text-gray-400">CBSE</p>
+                                <p class="mt-2">2021 | 97.6% Score</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Achievements -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-6 text-center">Academic & Creative Achievements</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Subject Topper - Class XII</h4>
+                                <p class="mt-2">100 in Accountancy, 99 in Economics, 98 in English with Certificates of Merit and Cash Prizes.</p>
+                            </div>
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">National Short Film Competition Winner</h4>
+                                <p class="mt-2">Winner of 'Best Hindi Film on End Plastic Pollution' award at Digital Earth Reel 2021.</p>
+                            </div>
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Kerala State Government Recognition</h4>
+                                <p class="mt-2">Certificate of Merit and Trophy for academic excellence in Class X (97.6% and All A1 grades).</p>
+                            </div>
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Scholarship Recipient</h4>
+                                <p class="mt-2">Awarded merit-based scholarship for consistent academic performance and leadership qualities.</p>
+                            </div>
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Perfect Scores Achievement</h4>
+                                <p class="mt-2">100 in Social Studies and Hindi, A1 in all subjects for Class X with Certificates of Merit and Trophies.</p>
+                            </div>
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Environmental Awareness Leader</h4>
+                                <p class="mt-2">Co-created award-winning short film 'End Plastic Pollution' as part of team effort to raise environmental consciousness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Leadership Section -->
+        <section id="experience" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Experience & Leadership</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Professional Experience -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-6 text-center">Professional Experience</h3>
+                        <div class="space-y-6">
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Financial Consultant (Intern)</h4>
+                                <p class="text-sm text-gray-400">Small-scale Consultancy | 120 hours</p>
+                                <p class="mt-2">Provided financial consulting services for small-scale business operations.</p>
+                            </div>
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">EY Audit Job Simulation</h4>
+                                <p class="text-sm text-gray-400">Forage | Feb 2025</p>
+                                <p class="mt-2">Involved identifying and assessing risks, control and substantive testing for EY's Audit team and preparing client conversations.</p>
+                            </div>
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">TEAMING @BCG Job Simulation</h4>
+                                <p class="text-sm text-gray-400">Forage | Feb 2025</p>
+                                <p class="mt-2">Learned effective teaming as a project leader and managed an unanticipated request.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Leadership Roles -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-6 text-center">Leadership & Recognition</h3>
+                         <div class="space-y-6">
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Head of Department - Administration</h4>
+                                <p class="text-sm text-gray-400">Hostelite Association (2024-2025)</p>
+                                <p class="mt-2">Recognized for outstanding contribution as AHOD (2023-2024) and HoD.</p>
+                            </div>
+                            <div class="card">
+                                <h4 class="font-bold text-lg text-gold">International Innovation Summit Recognition</h4>
+                                <p class="mt-2">Certificate of Appreciation from Zenik Learning at IMAGIVATION for leadership skills and future leader potential.</p>
+                            </div>
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Finance Committee Coordinator</h4>
+                                <p class="mt-2">Led budget planning and financial oversight for college events, managing funds exceeding ₹50,000.</p>
+                            </div>
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Student Council Representative</h4>
+                                <p class="mt-2">Elected representative for student affairs, facilitating communication between administration and student body (2022-2023).</p>
+                            </div>
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Peer Mentoring Program Leader</h4>
+                                <p class="mt-2">Mentored 15+ junior students in academic planning, career guidance, and CA preparation strategies.</p>
+                            </div>
+                             <div class="card">
+                                <h4 class="font-bold text-lg text-gold">Inter-College Competition Organizer</h4>
+                                <p class="mt-2">Successfully coordinated and managed multiple inter-college finance and business competitions with 200+ participants.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                     <h3 class="text-2xl font-semibold text-white mb-6 text-center">Key Activities & Involvement</h3>
+                     <div class="card max-w-3xl mx-auto">
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Active participation in financial events and competitions.</li>
+                            <li>Organizing and coordinating events at school and college level.</li>
+                            <li>Brainstorming sessions and strategic planning workshops.</li>
+                            <li>Recognition for problem-solving skills across multiple platforms.</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Professional Certifications</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="card">
+                        <h4 class="font-bold text-lg text-gold">Certificate in Finance</h4>
+                        <p class="text-sm text-gray-400">Acmegrade | Credential ID: AGC25050956</p>
+                        <p class="mt-2">Professional finance certification covering core financial principles, analysis techniques, and industry best practices.</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="font-bold text-lg text-gold">Advanced Financial Analysis Certificate</h4>
+                        <p class="text-sm text-gray-400">Professional Finance Institute</p>
+                        <p class="mt-2">Comprehensive course covering financial modeling, risk assessment, investment analysis, and advanced Excel techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 text-left">
+                    <!-- Technical Expertise -->
+                    <div class="card space-y-4 p-8">
+                        <h3 class="text-xl font-bold text-gold text-center mb-4">Technical Expertise</h3>
+                        <div>
+                            <p class="mb-1">Advanced MS Excel (VBA, Macros)</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                            <p class="mb-1">Financial Modeling & Analysis</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 90%"></div></div>
+                        </div>
+                        <div>
+                            <p class="mb-1">SAP, Tally ERP & QuickBooks</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 85%"></div></div>
+                        </div>
+                         <div>
+                            <p class="mb-1">Financial Statement Analysis</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 90%"></div></div>
+                        </div>
+                         <div>
+                            <p class="mb-1">Budgeting & Forecasting</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 88%"></div></div>
+                        </div>
+                    </div>
+                    <!-- Core Competencies -->
+                    <div class="card space-y-4 p-8">
+                        <h3 class="text-xl font-bold text-gold text-center mb-4">Core Competencies</h3>
+                        <div>
+                            <p class="mb-1">Strategic Leadership & Team Management</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                            <p class="mb-1">Problem Solving & Decision Making</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 98%"></div></div>
+                        </div>
+                        <div>
+                            <p class="mb-1">Client Relationship Management</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 90%"></div></div>
+                        </div>
+                        <div>
+                            <p class="mb-1">Project Management</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 92%"></div></div>
+                        </div>
+                         <div>
+                            <p class="mb-1">Presentation & Public Speaking</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 95%"></div></div>
+                        </div>
+                    </div>
+                    <!-- Languages -->
+                    <div class="card space-y-4 p-8">
+                        <h3 class="text-xl font-bold text-gold text-center mb-4">Language Proficiency</h3>
+                        <div>
+                            <p class="mb-1">English (Fluent)</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 100%"></div></div>
+                        </div>
+                        <div>
+                            <p class="mb-1">Hindi (Fluent)</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 100%"></div></div>
+                        </div>
+                        <div>
+                            <p class="mb-1">Malayalam (Native)</p>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-gold h-2.5 rounded-full" style="width: 100%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 card">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Ready to Work Together?</h3>
+                        <p class="mt-2 text-gray-400">Professional excellence awaits.</p>
+                        <p class="mt-4">
+                            Whether you're seeking a dedicated finance professional, need strategic consulting expertise, or want to discuss potential collaborations, I'm here to help drive your success.
+                        </p>
+                        <a href="https://www.linkedin.com/" target="_blank" class="mt-6 inline-block bg-gold text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-300 transition-transform transform hover:scale-105">Connect on LinkedIn</a>
+                        <div class="mt-8 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>yadhukrishnapalliyath@gmail.com</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>+91 9746120933</span>
+                            </div>
+                             <div class="flex items-center gap-3">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Mumbai, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                         <h3 class="text-2xl font-bold text-white">Send a Message</h3>
+                         <p class="mt-2 text-gray-400">I'll respond within 24 hours.</p>
+                         <form action="mailto:yadhukrishnapalliyath@gmail.com" method="post" enctype="text/plain" class="mt-4 space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-gold focus:border-gold">
+                            </div>
+                             <div>
+                                <label for="email" class="block text-sm font-medium">Email Address *</label>
+                                <input type="email" id="email" name="email" required class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-gold focus:border-gold">
+                            </div>
+                             <div>
+                                <label for="subject" class="block text-sm font-medium">Subject *</label>
+                                <input type="text" id="subject" name="subject" required class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-gold focus:border-gold">
+                            </div>
+                             <div>
+                                <label for="message" class="block text-sm font-medium">Message *</label>
+                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-gold focus:border-gold"></textarea>
+                            </div>
+                            <div>
+                               <button type="submit" class="w-full bg-gold text-gray-900 font-bold py-3 px-4 rounded-lg hover:bg-yellow-300 transition-transform transform hover:scale-105">Send Message</button>
+                            </div>
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div>
+                     <h3 class="text-lg font-bold text-white">Yadhukrishna Palliyath</h3>
+                     <p class="text-gray-400">Finance & Consulting Professional</p>
+                </div>
+                <div class="flex mt-4 md:mt-0 space-x-6">
+                     <a href="#about" class="text-gray-400 hover:text-white">About</a>
+                     <a href="#experience" class="text-gray-400 hover:text-white">Experience</a>
+                     <a href="#skills" class="text-gray-400 hover:text-white">Skills</a>
+                     <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Yadhukrishna Palliyath. All rights reserved. Built with precision and care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
+
